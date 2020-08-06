@@ -62,5 +62,5 @@ classifier = MultinomialNB(alpha=0.3)
 classifier.fit(X_train, y_train)
 
 # Creating a pickle file for the Multinomial Naive Bayes model
-filename = 'spam-sms.pkl'
+filename = 'spam-sms-mnb-model.pkl'
 pickle.dump(classifier, open(filename, 'wb'))
